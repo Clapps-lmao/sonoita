@@ -52,24 +52,67 @@
 
   .box {
     display: grid;
+    flex-wrap: wrap;
     color: white;
     font-family: "TS Block Bold";
     border: none;
     width: 666px;
+    padding-top: 5px;
     padding-left: 50px;
   }
+
 
   .heading-text {
     border: solid;
     border-top: none;
     border-right: none;
     border-left: none;
+    width: 666px;
   }
 
   .about-text {
     font-size: 12px;
     font-family: "B612 Mono";
   }
+  .inner-box-grid {
+    display: flex;
+    justify-items: center;
+    justify-content: start;
+    align-content: center;
+    flex-wrap: wrap;
+
+  }
+  .inner-box-grid-text {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+    font-family: "B612 Mono";
+    border: solid gray;
+    border-radius: 7px;
+    border-width: 2px;
+    height: 50px;
+    width: 270px;
+    margin-right: 23px;
+    transition: ease-out 500ms;
+    flex-wrap: wrap;
+  }
+
+  .inner-box-grid-text:hover {
+    transition: ease-in 500ms;
+    border: solid white;
+    border-radius: 7px;
+    border-width: 2px;
+  }
+  .inner-grid-div {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding-right: 50px;
+  }
+
+
 </style>
 <body style="height: 3000px!important;">
 <div class="upper-landing-page">
@@ -96,6 +139,32 @@
       <h3 class="heading-text">Food</h3>
       <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d54329.40156648542!2d-110.70075747584016!3d31.672500761206376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sus!4v1684694871309!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
+      <div class="box">
+        <h3 class="heading-text" style="letter-spacing: 1px;!important;">Wine</h3>
+        <div class="about-text">
+        <p>Sonoita wineries produce some exceptional wines and have many awards and metals to prove it. They are responsible for the area being known as Arizona's Sonoma.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3 class="heading-text">Menu Options</h3>
+      <div class="inner-box-grid">
+        <div class="inner-box-grid-text">
+          <a class="inner-grid-div" href="https://www.azsteakout.com/menu" target="_blank">The Steak Out Menu</a>
+          <img style="scale: 10%; position: absolute; padding-left: 150px" src="https://raw.githubusercontent.com/Clapps-lmao/sonoita/main/noun-share-673848%20copy.png">
+        </div>
+        <div class="inner-box-grid-text">
+          <a class="inner-grid-div" href="https://www.copperbrothelbrewery.com/_files/ugd/3437ff_3e6898cbe36c4a18a36af9c9524469ec.pdf" target="_blank">The Copper Brothel Menu</a>
+          <img style="scale: 10%; position: absolute; padding-left: 150px" src="https://raw.githubusercontent.com/Clapps-lmao/sonoita/main/noun-share-673848%20copy.png">
+        </div>
+        <div class="inner-box-grid-text">
+          <a class="inner-grid-div" href="https://www.copperbrothelbrewery.com/_files/ugd/3437ff_3e6898cbe36c4a18a36af9c9524469ec.pdf" target="_blank">The Copper Brothel Menu</a>
+          <img style="scale: 10%; position: absolute; padding-left: 150px" src="https://raw.githubusercontent.com/Clapps-lmao/sonoita/main/noun-share-673848%20copy.png">
+        </div>
+      </div>
+    </div>
+
 
 
   </div>
